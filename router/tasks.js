@@ -6,7 +6,7 @@ const {
     createAllTransactions,
     checkTransactionStatus,
     updateTransactionStatusWebhook
-} = require('Backend/controllers/Tasks')
+} = require('../controllers/Tasks')
 
 router.route('/').get(getAllTransactions)
 router.route('/:school_id').get(getTransactionsBySchool)
